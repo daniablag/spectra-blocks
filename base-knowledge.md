@@ -19,3 +19,11 @@ JavaScript defaults are aggregated in `blocks-config/blocks-attributes/getBlocks
 - ultimate-addons-for-gutenberg/includes/blocks/info-box/block.php
 - ultimate-addons-for-gutenberg/includes/blocks/info-box/attributes.php
 - ultimate-addons-for-gutenberg/includes/blocks/info-box/frontend.css.php
+
+### Used Files for buttons
+- ultimate-addons-for-gutenberg/includes/blocks/buttons/block.php
+- ultimate-addons-for-gutenberg/includes/blocks/buttons/attributes.php
+- ultimate-addons-for-gutenberg/includes/blocks/buttons/frontend.css.php
+- ultimate-addons-for-gutenberg/includes/blocks/buttons-child/block.php
+- ultimate-addons-for-gutenberg/includes/blocks/buttons-child/attributes.php
+- ultimate-addons-for-gutenberg/includes/blocks/buttons-child/frontend.css.php
