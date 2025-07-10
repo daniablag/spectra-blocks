@@ -1,0 +1,1 @@
+# Notes for lottie block

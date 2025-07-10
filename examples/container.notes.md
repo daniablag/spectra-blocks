@@ -29,3 +29,14 @@
 
 - Можно указать пустые идентификаторы: {"block_id":""} и uagb-block- . Это предпочтительно.
 - Указывать одинаковые идентификаторы в обоих местах.
+
+### Registration & Files
+- Server side metadata: `includes/blocks/container/block.php`.
+- Attributes defined in `includes/blocks/container/attributes.php` (see lines 32-68 for the first attributes).
+- Dynamic CSS/JS via `frontend.css.php` and `frontend.js.php`.
+
+### Important attributes
+- Layout related options: `directionDesktop`, `alignItemsDesktop`, `justifyContentDesktop`.
+- Padding and margin values for desktop/tablet/mobile.
+
+A `block_id` attribute maps to the HTML class `uagb-block-<id>`.
