@@ -1,0 +1,6 @@
+# WordPress volume data (not tracked)
+wordpress-dev/wp-data
+
+# Docker artifacts (если появятся)
+*.log
+*.pid
