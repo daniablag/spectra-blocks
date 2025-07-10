@@ -15,7 +15,7 @@ services:
     depends_on:
       - db
 
-  db:
+    db:
     image: mysql:8.4
     restart: always
     environment:
@@ -23,6 +23,7 @@ services:
       MYSQL_USER: wp_user
       MYSQL_PASSWORD: wp_pass
       MYSQL_ROOT_PASSWORD: root_pass
+    command: --default-authentication-plugin=mysql_native_password
     volumes:
       - db_data:/var/lib/mysql
 
