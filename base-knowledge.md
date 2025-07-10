@@ -28,7 +28,8 @@ JavaScript defaults are aggregated in `blocks-config/blocks-attributes/getBlocks
 - ultimate-addons-for-gutenberg/includes/blocks/buttons-child/attributes.php
 - ultimate-addons-for-gutenberg/includes/blocks/buttons-child/frontend.css.php
 - ultimate-addons-for-gutenberg/blocks-config/buttons-child/class-uagb-buttons-child.php
-
+- Child button attributes provide icon support with fields such as `showIcon` and `icon`.
+  
 ### Spectra global colors
 Spectra provides theme-wide color presets referenced as CSS variables.
 Use `var(--ast-global-color-<n>)` for background, text and border colors
