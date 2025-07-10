@@ -13,6 +13,8 @@
 - Layout settings: `align`, `gap`, `stack`, `flexWrap`.
 - Typography: `fontFamily`, `fontSize`, `lineHeight`, `fontWeight`.
 - Each child button has its own `block_id` and styling properties.
+- Apply Spectra global colors using `var(--ast-global-color-<n>)` for
+  background, text and border. See [base-knowledge.md](../base-knowledge.md#spectra-global-colors).
 
 ## Valid markup example
 Spectra expects matching identifiers between JSON `block_id` and the `uagb-block-` class, but IDs may be omitted. Use empty strings to let Spectra generate them automatically:
