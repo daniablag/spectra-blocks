@@ -1,0 +1,11 @@
+{
+  "name": "WordPress Dev",
+  "dockerComposeFile": ["../wordpress-dev/docker-compose.yml"],
+  "service": "wordpress",
+  "workspaceFolder": "/var/www/html",
+  "forwardPorts": [8000],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "chmod -R 777 /var/www/html"
+}
