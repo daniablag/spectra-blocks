@@ -30,3 +30,19 @@ Spectra expects matching identifiers between JSON `block_id` and the `uagb-block
 ```
 
 Keep `block_id` and the trailing class empty when generating new blocks.
+
+## Icon and responsive settings
+- Enable icons per button with `showIcon: true` and choose an icon name in `icon`.
+- Control placement using `iconPosition: "before"` or `"after"` and size with `iconSize`, `iconSizeTablet`, `iconSizeMobile`.
+- Set `removeText: true` to hide the label completely. Spectra will insert the SVG automatically so no manual markup is required.
+- Align buttons differently on tablet and mobile using `alignTablet` and `alignMobile`.
+- Use `stack:"mobile"` to stack all buttons vertically when viewed on mobile.
+
+Example:
+```html
+<!-- wp:uagb/buttons {"align":"center","alignTablet":"left","alignMobile":"center","stack":"mobile"} -->
+<div class="wp-block-uagb-buttons"><div class="uagb-buttons__wrap">
+  <!-- wp:uagb/buttons-child {"showIcon":true,"icon":"link","iconPosition":"before","iconSize":20,"removeText":true} /-->
+</div></div>
+<!-- /wp:uagb/buttons -->
+```
