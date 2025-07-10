@@ -27,3 +27,8 @@ JavaScript defaults are aggregated in `blocks-config/blocks-attributes/getBlocks
 - ultimate-addons-for-gutenberg/includes/blocks/buttons-child/block.php
 - ultimate-addons-for-gutenberg/includes/blocks/buttons-child/attributes.php
 - ultimate-addons-for-gutenberg/includes/blocks/buttons-child/frontend.css.php
+
+### Spectra global colors
+Spectra provides theme-wide color presets referenced as CSS variables.
+Use `var(--ast-global-color-<n>)` for background, text and border colors
+throughout blocks. Gradients cannot consume these variables directly.
