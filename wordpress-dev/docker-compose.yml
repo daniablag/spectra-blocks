@@ -27,5 +27,6 @@ services:
       - db_data:/var/lib/mysql
 
 volumes:
-  db_data:
+  - ../wordpress-dev/wp-data:/var/www/html
+
 
