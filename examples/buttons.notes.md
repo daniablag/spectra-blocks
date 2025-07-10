@@ -10,8 +10,9 @@
 ## Important attributes
 - `btn_count` – number of child buttons (default `1`).
 - `buttons` – array of child button objects with label, link, padding and color options.
-- Layout settings: `align`, `gap`, `stack`, `flexWrap`.
-- Typography: `fontFamily`, `fontSize`, `lineHeight`, `fontWeight`.
+- Layout settings: `align`, `gap`, `stack` (responsive orientation), `flexWrap`, `verticalAlignment`.
+- Text styling: `fontFamily`, `fontSize`, `fontWeight`, `fontTransform`/`transform`, `fontDecoration`/`decoration`, `letterSpacing`, `lineHeight`.
+- Custom classes or IDs can be assigned via the global `className` and `id` attributes.
 - Each child button has its own `block_id` and styling properties.
 
 ## Valid markup example
@@ -46,3 +47,40 @@ Example:
 </div></div>
 <!-- /wp:uagb/buttons -->
 ```
+## Additional styling options
+- Icon controls: `icon`, `iconSize`, `iconSpace`, `iconColor` and `iconHColor`.
+- Shadows use `boxShadowColor`, `boxShadowBlur`, `boxShadowSpread` with hover variants such as `boxShadowColorHover`.
+
+Example JSON:
+```json
+{
+  "blockName": "uagb/buttons",
+  "attrs": {
+    "block_id": "abcd1234",
+    "className": "my-buttons",
+    "id": "cta-buttons",
+    "stack": "tablet",
+    "verticalAlignment": "center",
+    "buttons": [
+      {
+        "label": "More info",
+        "icon": "info-circle",
+        "iconSize": 20,
+        "iconSpace": 8,
+        "iconColor": "#ffffff",
+        "iconHColor": "#ffff00",
+        "size": 16,
+        "fontWeight": "700",
+        "transform": "uppercase",
+        "decoration": "none",
+        "letterSpacing": 1,
+        "lineHeight": 1.2,
+        "boxShadowColor": "#00000026",
+        "boxShadowColorHover": "#0000004d"
+      }
+    ]
+  }
+}
+```
+This demonstrates how these attributes appear in the block configuration.
+
